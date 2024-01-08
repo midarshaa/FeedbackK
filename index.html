@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK | AUTHENTIC AROMAS | CUSTOMER FEEDBACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: larger ;
+            background-color: rgb(255, 0, 0);
+         
+            
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ff6a6a;
+            border-radius: 5px;
+          padding: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffcd44;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ffca56;
+            border-radius: 3px;
+            outline: none;
+            background-color: #ffd2d2;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #e9af00;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #db3503;
+        }
+        img{
+            width: fit-content;
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <div class="form-container">
+        <img src="LOGO final.png" alt="LOGO-AUTHENTIC-AROMAS">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="cabf992e-142b-4aad-b6a6-d7ed762f8fe7">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="contact">EMAIL / PHONE NUMBER</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your email or phone number" required>
+
+            <label for="feedback">FEEDBACK</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
